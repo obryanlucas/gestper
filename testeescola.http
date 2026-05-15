@@ -1,0 +1,37 @@
+### Listar todos os alunos
+GET http://localhost:3000/alunos
+Accept: application/json
+
+###
+
+### Criar um aluno
+POST http://localhost:3000/alunos
+Content-Type: application/json
+
+{
+  "nome": "Bryan",
+  "email": "bryan@gmail.com",
+  "data": "qualquer"
+}
+
+###
+
+### Buscar aluno por ID
+GET http://localhost:3000/alunos/10
+Accept: application/json
+
+###
+
+### Atualizar aluno
+PUT http://localhost:3000/alunos/14
+Content-Type: application/json
+
+{
+  
+   "email": "bryan1234@gmail.com"
+}
+
+###
+
+### Deletar aluno
+DELETE http://localhost:3000/alunos/11
